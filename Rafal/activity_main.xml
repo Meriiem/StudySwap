@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_major"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter your major"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btn_save_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Major" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Course Materials"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <Button
+        android:id="@+id/btn_to_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btn_to_homepage_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homepage A (All Materials)" />
+
+    <Button
+        android:id="@+id/btn_to_homepage_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homepage B (Major Specific)" />
+
+    <Button
+        android:id="@+id/btn_to_home_with_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home With Search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="User Profile"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <Button
+        android:id="@+id/btn_to_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account" />
+
+    <Button
+        android:id="@+id/btn_to_my_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Counter" />
+
+    <Button
+        android:id="@+id/btn_to_received_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received Requests" />
+
+    <Button
+        android:id="@+id/btn_to_sent_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sent Requests" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Other"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <Button
+        android:id="@+id/btn_to_features_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features Page" />
+
+</LinearLayout>
