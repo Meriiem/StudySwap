@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_options_array">
+        <item>Course Name</item>
+        <item>Virtual or Printed</item>
+        <item>Year of Publication</item>
+        <item>Major</item>
+        <item>Paid or Free</item>
+    </string-array>
+</resources>
