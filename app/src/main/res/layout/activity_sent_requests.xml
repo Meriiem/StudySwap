@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F7"> <!-- This is the background color of the activity -->
+
+    <!-- This is the top bar that contains the back button and the activity name -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EA3637"
+        android:elevation="10dp">
+
+    <!-- This is the back button -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back" />
+
+    <!-- This is the activity name -->
+    <TextView
+        android:id="@+id/activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="SENT REQUESTS"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+    <!-- This is the list view that displays the list items -->
+<ListView
+android:id="@+id/list_view"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_above="@+id/bottom_bar"
+android:layout_below="@+id/top_bar"
+android:divider="#E0E0E0"
+android:dividerHeight="1dp" />
+
+    <!-- This is the bottom bar that contains the icons for home, profile, sent requests, and received requests -->
+<LinearLayout
+android:id="@+id/bottom_bar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="#EA3637"
+android:elevation="4dp"
+android:orientation="horizontal"
+android:weightSum="4">
+
+<!-- This is the icon for home -->
+<ImageView
+    android:id="@+id/home_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:src="@drawable/home" />
+
+<!-- This is the icon for profile -->
+<ImageView
+    android:id="@+id/profile_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:src="@drawable/profile" />
+
+<!-- This is the icon for sent requests -->
+<ImageView
+    android:id="@+id/sent_requests_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:src="@drawable/sent" />
+
+<ImageView
+    android:id="@+id/received_requests_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:src="@drawable/notification" />
+</LinearLayout>
+    </RelativeLayout>

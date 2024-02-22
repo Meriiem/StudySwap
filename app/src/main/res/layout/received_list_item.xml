@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:background="#F9BEBD"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/item_pictureR"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gray" />
+
+    <TextView
+        android:id="@+id/item_titleR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_pictureR"
+        android:text="Item 1"
+        android:textColor="#EA3738"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_nameR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_titleR"
+        android:layout_toEndOf="@id/item_pictureR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="User Name"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/timeR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_nameR"
+        android:layout_toEndOf="@id/item_pictureR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Date: 20 Nov 2023"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/buttons_layoutR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeR"
+        android:layout_toEndOf="@id/item_pictureR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/accept_buttonR"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="#EA3637"
+            app:backgroundTint="#EA3637"
+            android:layout_marginStart="8dp"
+            android:text="Accept"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/decline_buttonR"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="9dp"
+            android:background="#EA3637"
+            android:text="Decline"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#EA3637" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contact_buttonR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeR"
+        android:layout_toEndOf="@id/item_pictureR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#2196F3"
+        android:text="Contact User"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+</RelativeLayout>

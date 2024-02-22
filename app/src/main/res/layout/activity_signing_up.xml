@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F7"
+    tools:context=".SignUpActivity">
+
+    <!-- This is the top bar that contains the back button and the activity name -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="10dp">
+
+        <!-- This is the back button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/backorange" />
+
+        <!-- This is the activity name -->
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SIGN UP"
+            android:textColor="#EA3637"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- This is the continue button -->
+    <LinearLayout
+        android:id="@+id/white_box"
+        android:layout_width="366dp"
+        android:layout_height="491dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- This is the title of the white box -->
+        <TextView
+            android:id="@+id/white_box_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create an Account"
+            android:layout_marginBottom="10dp"
+            android:textColor="#EA3637"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Full Name"
+            android:padding="10dp"
+            android:textColorHint="#EA3637"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Mobile Number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColorHint="#EA3637"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Email Address"
+            android:padding="10dp"
+            android:textColorHint="#EA3637"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#EA3637"
+            android:textSize="13sp" />
+
+        <!-- This is the drop down menu for the major -->
+<!--        <Spinner-->
+<!--            android:id="@+id/major"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="60dp"-->
+<!--            android:background="@drawable/edittext_border"-->
+<!--            android:entries="@array/majors"-->
+<!--            android:textColorHint="#EA3637"-->
+<!--            android:padding="10dp" />-->
+
+        <TextView
+            android:id="@+id/policy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="By creating an account you agree to our"
+            android:textColor="#EA3637"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/policy2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Terms of Service and Privacy Policy"
+            android:textColor="#EA3637"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/white_box"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#EA3637"
+        app:backgroundTint="#EA3637"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/goToLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account?"
+        android:textColor="#EA3637" />
+
+
+</RelativeLayout>

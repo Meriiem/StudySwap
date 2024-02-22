@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="soft_red">#EA3637</color>
+    <color name="background">#FFF9F7</color>
+
+    //app color palette
+    <color name="red">#ea3637</color>
+    <color name="light_orange">#ff9e80</color>
+    <color name="white_grey"> #f5f5f5</color>
+    <color name="black_grey">#333333</color>
+    <color name="yellow">#ffb366</color>
+    <color name="yellowish_orange">#F6A133</color>
+    <color name="pink">#ff8080</color>
+    <color name="light_pink">#EFBBBB</color>
+    <color name="light_muted_pink">#F9C2C2</color>
+    <color name="white_pink">#FCF6F6</color>
+    <color name="dark_grey">#555555</color>
+    <color name="light_grey">#999999</color>
+    <color name="white_orange">#FFF9F7</color>
+</resources>

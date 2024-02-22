@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:background="#F9BEBD"
+    android:padding="5dp">
+
+    <!-- This is the item picture -->
+    <ImageView
+        android:id="@+id/item_picture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gray" />
+
+    <!-- This is the item title -->
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_picture"
+        android:text="Item 1"
+        android:textColor="#EA3738"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- This is the request status -->
+    <TextView
+        android:id="@+id/request_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_picture"
+        android:text="Status: Pending"
+        android:textColor="#FF9800"
+        android:textSize="14sp" />
+
+    <!-- This is the item seller username -->
+    <TextView
+        android:id="@+id/item_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/request_status"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_picture"
+        android:text="User: Seller 1"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" />
+
+    <!-- This is the date of request sent -->
+    <TextView
+        android:id="@+id/date_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_seller"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_picture"
+        android:text="Date: 20 Nov 2023"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" />
+
+    <!-- This is the 3 dots icon button -->
+    <ImageView
+        android:id="@+id/menu_button"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/triple" />
+</RelativeLayout>

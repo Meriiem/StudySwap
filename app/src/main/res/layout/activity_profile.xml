@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F7">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EA3637"
+        android:elevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MyCounterActivity"
+        android:fillViewport="true"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_pink"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/txtUserInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_info_header"
+                        android:layout_alignParentStart="true"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginVertical="20dp"/>
+
+                    <TextView
+                        android:id="@+id/Label_FirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:layout_below="@id/txtUserInfo"
+                        android:textSize="15sp"
+                        android:textColor="@color/light_pink"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <TextView
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sara"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignBottom="@id/Label_FirstName"
+                        android:layout_marginLeft="200dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/dark_grey"/>
+
+                    <View
+                        android:id="@+id/hl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/light_pink"
+                        android:layout_below="@id/txtFirstName"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_pink"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/txtContactInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_info_header"
+                        android:layout_alignParentStart="true"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginVertical="20dp"/>
+
+                    <TextView
+                        android:id="@+id/Label_Uni_Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uni_email"
+                        android:layout_below="@id/txtContactInfo"
+                        android:textSize="15sp"
+                        android:textColor="@color/light_pink"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <TextView
+                        android:id="@+id/txtUniEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="example@mail.com"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignBottom="@id/Label_Uni_Email"
+                        android:layout_marginLeft="200dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/dark_grey"/>
+
+                    <View
+                        android:id="@+id/hl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/light_pink"
+                        android:layout_below="@id/txtUniEmail"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <TextView
+                        android:id="@+id/Label_Phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_number"
+                        android:layout_below="@id/hl2"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/light_pink"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <TextView
+                        android:id="@+id/txtPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+0012345678"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignBottom="@id/Label_Phone"
+                        android:layout_marginLeft="200dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/dark_grey"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_pink"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_pink"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/txtStudentInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Student_info_header"
+                        android:layout_alignParentStart="true"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginVertical="20dp"/>
+
+                    <TextView
+                        android:id="@+id/Label_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Major"
+                        android:layout_below="@id/txtStudentInfo"
+                        android:textSize="15sp"
+                        android:textColor="@color/light_pink"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <TextView
+                        android:id="@+id/txtMajor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sara"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignBottom="@id/Label_major"
+                        android:layout_marginLeft="200dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/dark_grey"/>
+
+                    <View
+                        android:id="@+id/hl3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/light_pink"
+                        android:layout_below="@id/txtMajor"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAddItem"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:text="@string/add_item_button"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                app:backgroundTint="@null"
+                android:background="@drawable/add_item_btn"
+                android:layout_marginVertical="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_items_header"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/red"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/MyItemsTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill"
+                    app:tabMaxWidth="0dp"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabIndicator="@drawable/custom_tab"
+                    app:tabRippleColor="@null">
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/MyItemsViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/red"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EA3637"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/sent_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/sent" />
+
+        <ImageView
+            android:id="@+id/received_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/notification" />
+    </LinearLayout>
+</RelativeLayout>

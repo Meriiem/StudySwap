@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F7"> <!-- This is the background color of the activity -->
+
+    <!-- This is the top bar that contains the back button and the activity name -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EA3637"
+        android:elevation="10dp">
+
+        <!-- This is the back button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/back" />
+
+        <!-- This is the activity name -->
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_major"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your major"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/btn_save_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Major" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Course Materials"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <Button
+            android:id="@+id/btn_to_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/btn_to_homepage_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homepage A (All Materials)" />
+
+        <Button
+            android:id="@+id/btn_to_homepage_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homepage B (Major Specific)" />
+
+        <Button
+            android:id="@+id/btn_to_home_with_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home With Search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="User Profile"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <Button
+            android:id="@+id/btn_to_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account" />
+
+        <Button
+            android:id="@+id/btn_to_my_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Counter" />
+
+        <Button
+            android:id="@+id/btn_to_received_requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Received Requests" />
+
+        <Button
+            android:id="@+id/btn_to_sent_requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sent Requests" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Other"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <Button
+            android:id="@+id/btn_to_features_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Features Page" />
+
+    </LinearLayout>
+
+
+
+    <!-- This is the bottom bar that contains the icons for home, profile, sent requests, and received requests -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EA3637"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- This is the icon for home -->
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/home" />
+
+        <!-- This is the icon for profile -->
+        <ImageView
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/profile" />
+
+        <!-- This is the icon for sent requests -->
+        <ImageView
+            android:id="@+id/sent_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/sent" />
+
+        <ImageView
+            android:id="@+id/received_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/notification" />
+    </LinearLayout>
+</RelativeLayout>

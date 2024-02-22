@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/add_new_item_header"
+            android:textColor="@color/red"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/light_muted_pink"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="25dp">
+
+            <TextView
+                android:id="@+id/Label_ItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_title"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtxtItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Label_ItemTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="20sp"
+                android:padding="3dp"/>
+
+
+            <TextView
+                android:id="@+id/Label_CourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtxtItemTitle"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_title"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtxtCourseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Label_CourseName"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="20sp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/Label_itemYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtxtCourseName"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/year"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtxtYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Label_itemYear"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="20sp"
+                android:padding="3dp"/>
+
+
+            <TextView
+                android:id="@+id/Label_itemImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtxtYear"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_pic"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_below="@id/Label_itemImg"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@color/light_pink"
+                android:padding="30dp"
+                android:src="@drawable/image_icon" />
+
+            <TextView
+                android:id="@+id/Label_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgItem"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_category"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/item_category_group"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/Label_category"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/category_book"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/category_notes"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Label_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_category_group"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_charge"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <RadioGroup
+                android:id="@+id/item_charge_group"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/Label_charge"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnFree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/charge_free"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/charge_paid"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/Label_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_charge_group"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/item_type"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <RadioGroup
+                android:id="@+id/item_type_group"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/Label_type"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnPaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/type_paper"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVirtual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_radio_button_selector"
+                    android:button="@null"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/type_virtual"
+                    android:textColor="@drawable/radio_button_text_selector"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAddToList"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:text="@string/add_item_to_list_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            app:backgroundTint="@null"
+            android:background="@color/red"
+            android:layout_marginVertical="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">StudySwap</string>
+    <string name="major_not_provided">StudySwap</string>
+
+    <string-array name="majors">
+        <item>Computer Science</item>
+        <item>Mathematics</item>
+        <item>Engineering</item>
+        <item>Business</item>
+        <item>Art</item>
+    </string-array>
+
+
+    //Feature pages
+    <string name="feature_page_1_main_text">An app for students\nRun by students</string>
+    <string name="feature_page_2_text">Find useful notes and textbooks\nshared by students for various\ncourses</string>
+    <string name="feature_page_3_text">Share your own resources with others. You can get paid!</string>
+    <string name="successful_item_addition"><font fontFamily="@font/montserrat">New item added successfully!</font></string>
+    //My Counter
+    <string name="user_info_header">User Info</string>
+    <string name="contact_info_header">Contact Info</string>
+    <string name="Student_info_header">Student Info</string>
+    <string name="my_items_header">My Items</string>
+    <string name="add_new_item_header">Add New Item</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="uni_email">University Email</string>
+    <string name="phone_number">Phone</string>
+
+    <string name="collage">Collage</string>
+    <string name="major">Major</string>
+    <string name="year">Year</string>
+
+    <string name="optional">(Optional)</string>
+
+    <string name="my_books_tab">My Books</string>
+    <string name="my_notes_tab">My Notes</string>
+    <string name="all_tab">All</string>
+
+    <string name="item_title">Item Title</string>
+    <string name="course_name">Course Name</string>
+    <string name="item_pic">Item Picture</string>
+    <string name="item_category">Item Category</string>
+    <string name="category_book">BOOK</string>
+    <string name="category_notes">NOTES</string>
+    <string name="item_charge">Charge</string>
+    <string name="charge_free">FREE</string>
+    <string name="charge_paid">PAID</string>
+    <string name="item_type">Item Type</string>
+    <string name="type_paper">PAPER</string>
+    <string name="type_virtual">VIRTUAL</string>
+
+
+    //Button texts
+    <string name="continue_button">CONTINUE</string>
+    <string name="get_started_button">GET STARTED</string>
+    <string name="add_item_button">ADD ITEM</string>
+    <string name="add_item_to_list_button">ADD ITEM TO LIST</string>
+
+    //Toast warnings
+    <string name="missing_fields"><font fontFamily="@font/montserrat">All fields are required! Please fill them.</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

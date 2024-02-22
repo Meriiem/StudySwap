@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15413921072",
+    "project_id": "studyswap-f6025",
+    "storage_bucket": "studyswap-f6025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15413921072:android:6e88dcb90afed20a0974f5",
+        "android_client_info": {
+          "package_name": "com.example.studyswap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMgv5n7q7XQU0FD2Zr2nTO317GNmxDlS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

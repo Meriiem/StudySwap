@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <!-- Top Bar with back arrow and title -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EA3637"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Back arrow -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back" />
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Course Material Details"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <!-- Item Title -->
+
+    <!-- Item Image -->
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Item Title"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Item Image"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!-- Item Status (Paid or Free) -->
+
+    <!-- Item Type (Virtual or Printed) -->
+    <TextView
+        android:id="@+id/itemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="PAID / FREE"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+    <TextView
+        android:id="@+id/itemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual / Printed"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="@+id/itemStatus"
+        app:layout_constraintTop_toBottomOf="@+id/itemStatus"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Course Name -->
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="@+id/itemType"
+        app:layout_constraintTop_toBottomOf="@+id/itemType"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Academic Year -->
+    <TextView
+        android:id="@+id/academicYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="@+id/courseName"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Major (Optional) -->
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major (Optional)"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="@+id/academicYear"
+        app:layout_constraintTop_toBottomOf="@+id/academicYear"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Back Button -->
+
+    <!-- Custom Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/custom_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EA3637"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/home" />
+
+        <!-- Profile Button -->
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/profile" />
+
+        <!-- Sent Requests Button -->
+        <ImageButton
+            android:id="@+id/sent_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/sent" />
+
+        <!-- Received Requests Button -->
+        <ImageButton
+            android:id="@+id/received_requests_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/notification" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
